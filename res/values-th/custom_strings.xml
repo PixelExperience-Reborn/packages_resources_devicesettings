@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">พื้นที่ป้องกันการสัมผัส</string>
     <string name="touch_resistant_summary">ลดความไวบริเวณขอบเพื่อป้องกันการสัมผัสโดยไม่ได้ตั้งใจ</string>
     <string name="button_settings_title">ปุ่ม</string>
-    <string name="button_swap_summary">สลับปุ่มนำทาง</string>
     <string name="home_button_extra_settings">ปรับแต่งการทำงานของปุ่มโฮม</string>
     <string name="assistant_button_action">การดำเนินการของปุ่มผู้ช่วย</string>
     <string name="stylus_title">ปากกาสไตลัส</string>

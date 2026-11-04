@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">Khu vực chống cảm ứng</string>
     <string name="touch_resistant_summary">Giảm độ nhạy gần các cạnh để tránh chạm nhầm</string>
     <string name="button_settings_title">Phím</string>
-    <string name="button_swap_summary">Hoán Đổi Phím Điều Hướng</string>
     <string name="home_button_extra_settings">Tùy chỉnh hành vi của nút trang chủ</string>
     <string name="assistant_button_action">Hành động phím trợ lý</string>
     <string name="stylus_title">Bút Stylus</string>

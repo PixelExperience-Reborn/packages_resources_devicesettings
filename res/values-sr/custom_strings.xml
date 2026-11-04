@@ -184,7 +184,6 @@
     <string name="touch_resistant_title">Област отпорна на додир</string>
     <string name="touch_resistant_summary">Смањује осетљивост у близини ивица како би спречио нежељене додире</string>
     <string name="button_settings_title">Дугмад</string>
-    <string name="button_swap_summary">Замени Тастери за Навигацију</string>
     <string name="home_button_extra_settings">Прилагоди понашање тастера Почетна</string>
     <string name="assistant_button_action">Радња тастера Помоћник</string>
     <string name="stylus_title">Пенкало</string>

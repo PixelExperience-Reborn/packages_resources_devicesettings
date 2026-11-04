@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">Zona rezistentă la atingere</string>
     <string name="touch_resistant_summary">Reduce sensibilitatea în apropierea marginilor pentru a preveni atingerile accidentale</string>
     <string name="button_settings_title">Butoane</string>
-    <string name="button_swap_summary">Schimbă butoanele de navigare</string>
     <string name="home_button_extra_settings">Personalizează comportamentul butonului de pornire</string>
     <string name="assistant_button_action">Asistent acțiune cheie</string>
     <string name="stylus_title">Stylus</string>

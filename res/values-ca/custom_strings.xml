@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">Àrea resistent al tacte</string>
     <string name="touch_resistant_summary">Redueix la sensibilitat prop de les vores per prevenir pulsacions accidentals</string>
     <string name="button_settings_title">Botons</string>
-    <string name="button_swap_summary">Inverteix els botons de navegació</string>
     <string name="home_button_extra_settings">Personalitzar el comportament del botó d\'inici</string>
     <string name="assistant_button_action">Acció del botó de l\'assistent</string>
     <string name="stylus_title">Llapis tàctil</string>

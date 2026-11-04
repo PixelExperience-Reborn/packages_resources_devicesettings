@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">Kosketusta vastustava alue </string>
     <string name="touch_resistant_summary">Vähentää lähellä reunaa tapahtuvia vahinko kosketuksia</string>
     <string name="button_settings_title">Painikkeet</string>
-    <string name="button_swap_summary">Vaihda navigointinäppäinten paikkaa</string>
     <string name="home_button_extra_settings">Mukauta kotinäppäimen käyttäytymistä</string>
     <string name="assistant_button_action">Assistant painikkeen toiminto</string>
     <string name="stylus_title">Kosketusnäyttökynä</string>

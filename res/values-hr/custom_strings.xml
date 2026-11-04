@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">Područje otporno na dodir</string>
     <string name="touch_resistant_summary">Smanjuje osjetljivost u blizini rubova kako bi spriječio slučajne dodire</string>
     <string name="button_settings_title">Tipke</string>
-    <string name="button_swap_summary">Zamijeni navigacijske tipke</string>
     <string name="home_button_extra_settings">Prilagodite ponašanje tipke Početna</string>
     <string name="assistant_button_action">Radnja tipke Pomoćnik</string>
     <string name="stylus_title">Stylus Pen</string>

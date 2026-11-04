@@ -43,16 +43,41 @@ def main():
         except ET.ParseError as exc:
             errors.append(f"{path.relative_to(ROOT)}: {exc}")
     require(not errors, "all resource XML files parse: " + "; ".join(errors[:8]))
-    for locale in ("values", "values-ru", "values-uk"):
-        directory = ROOT / "res" / locale
-        keys = []
-        for filename in ("strings.xml", "custom_strings.xml"):
-            path = directory / filename
-            require(path.is_file(), f"{locale}/{filename} exists")
+    # AAPT2 resource uniqueness is per qualifier directory and resource type.
+    # Inventory *all* locales rather than only the three languages initially
+    # examined. Do not silently convert resource collisions into CI success.
+    collisions = []
+    checked = 0
+    for directory in sorted((ROOT / "res").iterdir()):
+        if not directory.is_dir() or not directory.name.startswith("values"):
+            continue
+        definitions = {}
+        for path in sorted(directory.glob("*.xml")):
             root = ET.parse(path).getroot()
-            keys.extend(item.get("name") for item in root if item.get("name"))
-        require(len(keys) == len(set(keys)), f"{locale} resource entries have distinct names")
-        print(f"LOCALE INVENTORY: {locale}: {len(keys)} named resource entries")
+            for item in root:
+                name = item.get("name")
+                if not name:
+                    continue
+                kind = item.get("type") if item.tag == "item" else item.tag
+                kind = "array" if kind in ("array", "string-array") else kind
+                key = (kind, name)
+                if key in definitions:
+                    collisions.append(f"{directory.name}: {kind}/{name} "
+                                      f"in {definitions[key]} AND {path.name}")
+                else:
+                    definitions[key] = path.name
+        checked += 1
+        if directory.name in ("values", "values-ru", "values-uk"):
+            for filename in ("strings.xml", "custom_strings.xml"):
+                require((directory / filename).is_file(),
+                        f"{directory.name}/{filename} exists")
+            print(f"LOCALE INVENTORY: {directory.name}: {len(definitions)} resources")
+    require(checked >= 130, f"all translation qualifiers checked: {checked}")
+    if collisions:
+        for issue in collisions[:40]:
+            print("BLOCKER duplicate Android resource:", issue, file=sys.stderr)
+        print(f"BLOCKER total resource collisions: {len(collisions)}", file=sys.stderr)
+    require(not collisions, "AAPT2 resource identifier uniqueness across locale XMLs")
     main_strings = (ROOT / "res/values/custom_strings.xml").read_text()
     require('name="dirac_title"' in main_strings and 'name="powershare_enable_title"' in main_strings,
             "archived Dirac and powershare display labels (NOT HAL features)")

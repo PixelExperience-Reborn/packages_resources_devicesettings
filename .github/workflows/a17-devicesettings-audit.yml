@@ -1,0 +1,20 @@
+name: AOSP17 device-settings resources historical audit
+
+on:
+  push:
+    branches:
+      - audit/a17-mondrian-devicesettings-20261104
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  legacy-resources-inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse all legacy resource XML and assert module ownership
+        run: python3 tools/verify_a17_devicesettings_legacy.py

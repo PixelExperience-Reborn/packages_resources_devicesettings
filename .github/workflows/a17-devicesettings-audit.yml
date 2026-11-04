@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - audit/a17-mondrian-devicesettings-20261104
+      - fix/a17-pe-devicesettings-resource-collisions-20261104
   pull_request:
   workflow_dispatch:
 

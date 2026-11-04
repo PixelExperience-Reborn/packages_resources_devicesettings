@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">Az érintés-érzékeny terület</string>
     <string name="touch_resistant_summary">Csökkenti az érzékenységet a széleken, hogy megakadályozza a véletlen érintéseket</string>
     <string name="button_settings_title">Gombok</string>
-    <string name="button_swap_summary">Navigációs gombok felcserélése</string>
     <string name="home_button_extra_settings">A Home-gomb viselkedése</string>
     <string name="assistant_button_action">A segédgomb művelete</string>
     <string name="stylus_title">Stylus toll</string>

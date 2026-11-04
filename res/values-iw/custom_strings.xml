@@ -181,7 +181,6 @@
     <string name="touch_resistant_title">איזור עמיד למגע</string>
     <string name="touch_resistant_summary">מפחית את הרגישות ליד הקצוות המסך כדי למנוע נגיעות בטעות</string>
     <string name="button_settings_title">מקשים</string>
-    <string name="button_swap_summary">החלף לחצני ניווט</string>
     <string name="home_button_extra_settings">התאם אישית את התנהגות כפתור הבית</string>
     <string name="assistant_button_action">פעולת מקש העוזרת הקולית</string>
     <string name="stylus_title">עט סטיילוס</string>

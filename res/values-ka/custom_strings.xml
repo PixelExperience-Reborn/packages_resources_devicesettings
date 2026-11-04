@@ -186,7 +186,6 @@
     <string name="touch_resistant_title">შეხების რეზისტენტული ადგილი</string>
     <string name="touch_resistant_summary">ამცირებს მგრძნობელობას კიდეებთან ახლოს შემთხვევითი შეხების თავიდან ასაცილებლად</string>
     <string name="button_settings_title">ღილაკები</string>
-    <string name="button_swap_summary">ადგილის გაცვლა ნავიგაციის ღილაკებისთვის</string>
     <string name="home_button_extra_settings">სახლის ღილაკის ქცევის მორგება</string>
     <string name="assistant_button_action">დამხმარე ღილაკის მოქმედება</string>
     <string name="stylus_title">სტილუს კალამი</string>

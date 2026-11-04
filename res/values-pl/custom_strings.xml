@@ -189,7 +189,6 @@
     <string name="touch_resistant_title">Obszar odporny na dotyk</string>
     <string name="touch_resistant_summary">Zmniejsza czułość w pobliżu krawędzi, aby zapobiec przypadkowym dotknięciom</string>
     <string name="button_settings_title">Przyciski</string>
-    <string name="button_swap_summary">Zamień miejscami przyciski nawigacji</string>
     <string name="home_button_extra_settings">Dostosuj zachowanie przycisku home</string>
     <string name="assistant_button_action">Akcje przycisku Asystenta</string>
     <string name="stylus_title">Rysik</string>
